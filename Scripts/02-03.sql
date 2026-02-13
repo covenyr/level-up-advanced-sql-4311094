@@ -7,6 +7,6 @@ SELECT emp.employeeId,
 FROM sales sls
 INNER JOIN employee emp
     ON sls.employeeId = emp.employeeId
-WHERE sls.soldDate >= date('now','start of year')
+WHERE sls.soldDate >= '2022-01-01'
 GROUP BY emp.employeeId
 HAVING count(*) > 5

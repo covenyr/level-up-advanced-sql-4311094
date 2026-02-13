@@ -4,7 +4,7 @@
 SELECT emp.employeeId, emp.firstName, emp.lastName
 FROM sales sls
 INNER JOIN employee emp
-    ON sls.employeeId = emp.employeeId
+    ON sls.employeeId = emp.employeeId;
 
 -- then add the group by & count
 SELECT emp.employeeId, emp.firstName, emp.lastName, count(*) as NumOfCarsSold
